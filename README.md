@@ -124,7 +124,7 @@ The app will open in your default browser at `http://localhost:8501`
 | > ₹10L | 30% |
 
 **Rules:**
-- Standard Deduction: ₹75,000
+- Standard Deduction: ₹50,000
 - Allows: 80C, 80D, HRA, and other deductions
 - No rebate
 
