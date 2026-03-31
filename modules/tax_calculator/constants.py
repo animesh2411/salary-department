@@ -8,7 +8,7 @@ from .year_utils import get_fiscal_year_display
 
 # Standard Deduction (applicable to both regimes)
 STANDARD_DEDUCTION = 75_000
-STANDARD_DEDUCTION_OLD = 75_000
+STANDARD_DEDUCTION_OLD = 50_000
 
 # ==============================================================================
 # NEW REGIME TAX SLABS
