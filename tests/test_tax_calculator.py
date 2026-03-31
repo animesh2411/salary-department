@@ -12,6 +12,7 @@ from modules.tax_calculator.models import SalaryInput, TaxResult
 from modules.tax_calculator.constants import (
     STANDARD_DEDUCTION,
     NEW_REGIME_REBATE_LIMIT,
+    STANDARD_DEDUCTION_OLD,
 )
 
 
@@ -112,7 +113,7 @@ class TestOldRegime:
         )
         result = calculate_tax_old_regime(salary_input)
 
-        expected_deductions = STANDARD_DEDUCTION + deduction_80c
+        expected_deductions = STANDARD_DEDUCTION_OLD + deduction_80c
         assert result.total_deductions == expected_deductions
         assert result.taxable_income == gross_salary - expected_deductions
 
@@ -129,7 +130,7 @@ class TestOldRegime:
         result = calculate_tax_old_regime(salary_input)
 
         expected_deductions = (
-            STANDARD_DEDUCTION
+            STANDARD_DEDUCTION_OLD
             + 1_00_000
             + 50_000
             + 2_00_000

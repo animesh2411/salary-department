@@ -230,14 +230,14 @@ def render():
 
             st.info(
                 "**Rules:** "
-                "Standard Deduction ₹75,000 | "
+                "Standard Deduction ₹50,000 | "
                 "Deductions: 80C, 80D, HRA, etc."
             )
 
             col_a, col_b = st.columns(2)
             with col_a:
                 st.write(f"**Gross Income:** {format_currency(old_result.gross_income)}")
-                st.write(f"**Standard Deduction:** {format_currency(75_000)}")
+                st.write(f"**Standard Deduction:** {format_currency(50_000)}")
                 st.write(f"**80C Deduction:** {format_currency(salary_input.deduction_80c)}")
                 st.write(f"**80D Deduction:** {format_currency(salary_input.deduction_80d)}")
             with col_b:
@@ -270,7 +270,7 @@ def render():
         **Old Regime (Traditional):**
         - Allows deductions under 80C, 80D, HRA, etc.
         - Progressive tax slabs
-        - ₹75,000 standard deduction
+        - ₹50,000 standard deduction
         - Better for investors, high earners with deductions
 
         ### Key Differences

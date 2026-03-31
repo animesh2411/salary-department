@@ -8,6 +8,7 @@ from .year_utils import get_fiscal_year_display
 
 # Standard Deduction (applicable to both regimes)
 STANDARD_DEDUCTION = 75_000
+STANDARD_DEDUCTION_OLD = 75_000
 
 # ==============================================================================
 # NEW REGIME TAX SLABS
@@ -63,4 +64,3 @@ FY_DISPLAY = get_fiscal_year_display()
 FY_START = get_fiscal_year_display().replace("FY ", "FY starting 1st April ")
 
 FY_END = "31st March 2027"
-FY_DISPLAY = "FY 2026-27"

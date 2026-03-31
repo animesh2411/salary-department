@@ -11,6 +11,7 @@ from .constants import (
     OLD_REGIME_SLABS,
     REGIME_NEW,
     REGIME_OLD,
+    STANDARD_DEDUCTION_OLD,
 )
 from .utils import calculate_income_in_slab, round_to_nearest
 
@@ -86,7 +87,7 @@ def calculate_tax_old_regime(salary_input: SalaryInput) -> TaxResult:
 
     # Total deductions (standard + eligible deductions)
     total_deductions = (
-        STANDARD_DEDUCTION
+        STANDARD_DEDUCTION_OLD
         + salary_input.deduction_80c
         + salary_input.deduction_80d
         + salary_input.hra_deduction
@@ -113,7 +114,7 @@ def calculate_tax_old_regime(salary_input: SalaryInput) -> TaxResult:
         effective_tax_rate = 0.0
 
     # Take-home salary
-    take_home = gross_salary - tax_amount - (total_deductions - STANDARD_DEDUCTION)
+    take_home = gross_salary - tax_amount - (total_deductions - STANDARD_DEDUCTION_OLD)
 
     return TaxResult(
         regime=REGIME_OLD,
