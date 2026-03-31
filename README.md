@@ -1,6 +1,7 @@
 # Salary Department 💼
 
 A comprehensive, modular Streamlit application for salary-related financial tools.
+Access the application here: https://yoursalary.streamlit.app/
 
 ## Features 🌟
 
