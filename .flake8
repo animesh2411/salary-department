@@ -1,0 +1,21 @@
+[flake8]
+# Flake8 configuration for Salary Department project
+
+max-line-length = 120
+extend-ignore = E203, W503
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    .eggs,
+    *.egg,
+    build,
+    dist,
+    .pytest_cache,
+    .mypy_cache
+
+max-complexity = 10
+per-file-ignores =
+    __init__.py:F401
+
